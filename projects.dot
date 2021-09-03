@@ -14,10 +14,12 @@ graph {
     generalized_pruning                     [style="filled";color=11]
     mechanistic_SHM                         [style="filled";color=11]
     paired_HL                               [style="filled";color=11]
+    phylogenetic_VI                         [style="filled";color=11]
     antibody_DMS                            [style="filled";color=11]
     subsplit_DAG                            [style="filled";color=11]
     torchdms                                [style="filled";color=11]
     transport                               [style="filled";color=11]
+    VI_diagnostics                          [style="filled";color=11]
     // dormant
     CFT                                     [shape="house"]
     hillclimber                             [shape="house"]
@@ -41,7 +43,6 @@ graph {
     interactive_DMS_viz                     [shape="diamond"]
     local_EM                                [shape="diamond"]
     online_phylo_VI                         [shape="diamond"]
-    phylogenetic_VI                         [shape="diamond"]
     polytomy_resolution                     [shape="diamond"]
     SHM_across_ages                         [shape="diamond"]
     // topics
@@ -52,6 +53,7 @@ graph {
 
     phylogenetic_VI -- adaptive_MCMC
     bito -- phylogenetic_VI
+    VI_diagnostics -- phylogenetic_VI
     bito -- autodiff_gradients
     bito -- subsplit_DAG
     phylogenetic_VI -- online_phylo_VI
@@ -62,8 +64,9 @@ graph {
     subsplit_DAG -- Bayesian_histories
     subsplit_DAG -- how_big_of_sDAG
     subsplit_DAG -- Bayesian_subtree_optimality
+    subsplit_DAG -- fasdag
     hillclimber -- find_posterior_modes
-    Bayesian_histories -- fasdag
+    how_big_of_sDAG -- find_posterior_modes
     Bayesian_histories -- context_sensitive_phylo
     Bayesian_histories -- Bayesian_GCtree
     Bayesian_histories -- SARS2_parsimony_plateau
