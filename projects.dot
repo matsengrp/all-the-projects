@@ -1,0 +1,97 @@
+graph {
+    overlap=false
+    node[colorscheme="set312"]
+
+    // active
+    Bayesian_GCtree                         [style="filled";color=11]
+    GCreplay                                [style="filled";color=11]
+    HLA_effects                             [style="filled";color=11]
+    PhIP_seq                                [style="filled";color=11]
+    TCR_GWAS                                [style="filled";color=11]
+    TCR_trimming_motifs                     [style="filled";color=11]
+    bito                                    [style="filled";color=11]
+    autodiff_gradients                      [style="filled";color=11]
+    generalized_pruning                     [style="filled";color=11]
+    mechanistic_SHM                         [style="filled";color=11]
+    paired_HL                               [style="filled";color=11]
+    antibody_DMS                            [style="filled";color=11]
+    subsplit_DAG                            [style="filled";color=11]
+    torchdms                                [style="filled";color=11]
+    transport                               [style="filled";color=11]
+    // dormant
+    CFT                                     [shape="house"]
+    hillclimber                             [shape="house"]
+    olmsted                                 [shape="house"]
+    // future
+    BCR_GWAS                                [shape="diamond"]
+    BCR_indels                              [shape="diamond"]
+    BCR_selection_analysis                  [shape="diamond"]
+    BCR_trajectories                        [shape="diamond"]
+    B_cell_CONGA                            [shape="diamond"]
+    Bayesian_subtree_optimality             [shape="diamond"]
+    GCtree_with_heritable                   [shape="diamond"]
+    SARS2_parsimony_plateau                 [shape="diamond"]
+    adaptive_MCMC                           [shape="diamond"]
+    context_sensitive_phylo                 [shape="diamond"]
+    fasdag                                  [shape="diamond"]
+    fast_TreeTime                           [shape="diamond"]
+    find_posterior_modes                    [shape="diamond"]
+    help_PANGO                              [shape="diamond"]
+    how_big_of_sDAG                         [shape="diamond"]
+    interactive_DMS_viz                     [shape="diamond"]
+    local_EM                                [shape="diamond"]
+    online_phylo_VI                         [shape="diamond"]
+    phylogenetic_VI                         [shape="diamond"]
+    polytomy_resolution                     [shape="diamond"]
+    SHM_across_ages                         [shape="diamond"]
+    // topics
+    BCR_analysis                            [shape="rectangle"]
+    Bayesian_histories                      [shape="rectangle"]
+    TCR_analysis                            [shape="rectangle"]
+
+
+    phylogenetic_VI -- adaptive_MCMC
+    bito -- phylogenetic_VI
+    bito -- autodiff_gradients
+    bito -- subsplit_DAG
+    phylogenetic_VI -- online_phylo_VI
+    subsplit_DAG -- online_phylo_VI
+    subsplit_DAG -- hillclimber
+    subsplit_DAG -- generalized_pruning
+    subsplit_DAG -- local_EM
+    subsplit_DAG -- Bayesian_histories
+    subsplit_DAG -- how_big_of_sDAG
+    subsplit_DAG -- Bayesian_subtree_optimality
+    hillclimber -- find_posterior_modes
+    Bayesian_histories -- fasdag
+    Bayesian_histories -- context_sensitive_phylo
+    Bayesian_histories -- Bayesian_GCtree
+    Bayesian_histories -- SARS2_parsimony_plateau
+    Bayesian_histories -- help_PANGO
+    Bayesian_histories -- fast_TreeTime
+    fast_TreeTime -- polytomy_resolution
+    Bayesian_GCtree -- GCreplay
+    Bayesian_GCtree -- GCtree_with_heritable
+    GCreplay -- torchdms
+    GCreplay -- antibody_DMS
+    antibody_DMS -- torchdms
+    antibody_DMS -- PhIP_seq
+    antibody_DMS -- interactive_DMS_viz
+    BCR_analysis -- BCR_selection_analysis
+    BCR_analysis -- BCR_trajectories
+    BCR_analysis -- BCR_indels
+    BCR_analysis -- Bayesian_histories
+    BCR_analysis -- paired_HL
+    BCR_analysis -- CFT
+    CFT -- olmsted
+    BCR_analysis -- mechanistic_SHM
+    mechanistic_SHM -- SHM_across_ages
+    BCR_analysis -- BCR_GWAS
+    BCR_GWAS -- TCR_GWAS
+    TCR_analysis -- TCR_GWAS
+    TCR_analysis -- HLA_effects
+    TCR_analysis -- transport
+    TCR_analysis -- TCR_trimming_motifs
+    mechanistic_SHM -- context_sensitive_phylo
+    paired_HL -- B_cell_CONGA
+}
