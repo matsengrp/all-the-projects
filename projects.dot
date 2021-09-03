@@ -49,8 +49,13 @@ graph {
     BCR_analysis                            [shape="rectangle"]
     Bayesian_histories                      [shape="rectangle"]
     TCR_analysis                            [shape="rectangle"]
+    // bigger-picture
+    train_awesome_researchers               [shape="star"]
+    diversify_comp_bio                      [shape="star"]
+    eradicate_disease                       [shape="star"]
 
 
+    // edges
     phylogenetic_VI -- adaptive_MCMC
     bito -- phylogenetic_VI
     VI_diagnostics -- phylogenetic_VI
