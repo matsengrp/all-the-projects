@@ -3,57 +3,74 @@ graph {
     node[colorscheme="set312"]
 
     // active
-    Bayesian_GCtree                         [style="filled";color=11]
-    GCreplay                                [style="filled";color=11]
-    HLA_effects                             [style="filled";color=11]
-    PhIP_seq                                [style="filled";color=11]
-    TCR_GWAS                                [style="filled";color=11]
-    TCR_trimming_motifs                     [style="filled";color=11]
-    bito                                    [style="filled";color=11]
-    autodiff_gradients                      [style="filled";color=11]
-    generalized_pruning                     [style="filled";color=11]
-    mechanistic_SHM                         [style="filled";color=11]
-    paired_HL                               [style="filled";color=11]
-    phylogenetic_VI                         [style="filled";color=11]
-    antibody_DMS                            [style="filled";color=11]
-    subsplit_DAG                            [style="filled";color=11]
-    torchdms                                [style="filled";color=11]
-    transport                               [style="filled";color=11]
-    VI_diagnostics                          [style="filled";color=11]
-    // dormant
-    CFT                                     [shape="house"]
-    hillclimber                             [shape="house"]
-    olmsted                                 [shape="house"]
-    // future
-    BCR_GWAS                                [shape="diamond"]
-    BCR_indels                              [shape="diamond"]
-    BCR_selection_analysis                  [shape="diamond"]
-    BCR_trajectories                        [shape="diamond"]
-    B_cell_CONGA                            [shape="diamond"]
-    Bayesian_subtree_optimality             [shape="diamond"]
-    GCtree_with_heritable                   [shape="diamond"]
-    SARS2_parsimony_plateau                 [shape="diamond"]
-    adaptive_MCMC                           [shape="diamond"]
-    context_sensitive_phylo                 [shape="diamond"]
-    fasdag                                  [shape="diamond"]
-    fast_TreeTime                           [shape="diamond"]
-    find_posterior_modes                    [shape="diamond"]
-    help_PANGO                              [shape="diamond"]
-    how_big_of_sDAG                         [shape="diamond"]
-    interactive_DMS_viz                     [shape="diamond"]
-    local_EM                                [shape="diamond"]
-    online_phylo_VI                         [shape="diamond"]
-    polytomy_resolution                     [shape="diamond"]
-    SHM_across_ages                         [shape="diamond"]
-    // topics
-    BCR_analysis                            [shape="rectangle"]
-    Bayesian_histories                      [shape="rectangle"]
-    TCR_analysis                            [shape="rectangle"]
-    // bigger-picture
-    train_awesome_researchers               [shape="star"]
-    diversify_comp_bio                      [shape="star"]
-    eradicate_disease                       [shape="star"]
+        Bayesian_GCtree                         [style="filled";color=11]
+        GCreplay                                [style="filled";color=11]
+        HLA_effects                             [style="filled";color=11]
+        PhIP_seq                                [style="filled";color=11]
+        TCR_GWAS                                [style="filled";color=11]
+        TCR_trimming_motifs                     [style="filled";color=11]
+        bito                                    [style="filled";color=11]
+        autodiff_gradients                      [style="filled";color=11]
+        generalized_pruning                     [style="filled";color=11]
+        mechanistic_SHM                         [style="filled";color=11]
+        paired_HL                               [style="filled";color=11]
+        phylogenetic_VI                         [style="filled";color=11]
+        antibody_DMS                            [style="filled";color=11]
+        subsplit_DAG                            [style="filled";color=11]
+        torchdms                                [style="filled";color=11]
+        transport                               [style="filled";color=11]
+        VI_diagnostics                          [style="filled";color=11]
 
+    // ** dormant **
+        CFT                                     [shape="house"]
+        hillclimber                             [shape="house"]
+        olmsted                                 [shape="house"]
+
+    // ** Future **
+    // Biologist
+        BCR_GWAS                                [shape="diamond"]
+    // Biologist-computational
+        BCR_indels                              [shape="diamond"]
+        BCR_selection_analysis                  [shape="diamond"]
+        BCR_trajectories                        [shape="diamond"]
+        B_cell_CONGA                            [shape="diamond"]
+        context_sensitive_phylo                 [shape="diamond"]
+        interactive_DMS_viz                     [shape="diamond"]
+        SHM_across_ages                         [shape="diamond"]
+    // Phylogenetics
+        // How does the Bayesian posterior distribution change when a taxon is added to the tree?
+        // (Note that some people use "rogue" to mean "wandering".)
+        Bayesian_subtree_optimality             [shape="diamond"]
+        SARS2_parsimony_plateau                 [shape="diamond"]
+        // Develop NJ and parsimony approaches to reconstructing the sDAG.
+        // What is NJp? https://paperpile.com/shared/QJm8XP
+        // See https://ieeexplore.ieee.org/abstract/document/8404978
+        // https://paperpile.com/shared/TaDKjP
+        fasdag                                  [shape="diamond"]
+        // Can we do something to quickly find posterior modes?
+        find_posterior_modes                    [shape="diamond"]
+        // What sort of tooling would actually help PANGO do their job better?
+        help_PANGO                              [shape="diamond"]
+    // Phylogenetics, with hard math
+        GCtree_with_heritable                   [shape="diamond"]
+        local_EM                                [shape="diamond"]
+        fast_TreeTime                           [shape="diamond"]
+    // Phylogenetics, with hard coding
+        adaptive_MCMC                           [shape="diamond"]
+        // How big of a subsplit DAG is actually required to get reasonable estimates (with uncertaintly quantification) of key parameters?
+        how_big_of_sDAG                         [shape="diamond"]
+        online_phylo_VI                         [shape="diamond"]
+        polytomy_resolution                     [shape="diamond"]
+
+    // ** topics **
+        BCR_analysis                            [shape="rectangle"]
+        Bayesian_histories                      [shape="rectangle"]
+        TCR_analysis                            [shape="rectangle"]
+
+    // ** bigger-picture **
+        train_awesome_researchers               [shape="star"]
+        diversify_comp_bio                      [shape="star"]
+        eradicate_disease                       [shape="star"]
 
     // edges
     phylogenetic_VI -- adaptive_MCMC
