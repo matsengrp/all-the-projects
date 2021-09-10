@@ -37,6 +37,7 @@ graph {
         context_sensitive_phylo                 [shape="diamond"]
         interactive_DMS_viz                     [shape="diamond"]
         SHM_across_ages                         [shape="diamond"]
+        linearham_empirical_uncertainty         [shape="diamond"]
     // Phylogenetics
         // How does the Bayesian posterior distribution change when a taxon is added to the tree?
         // (Note that some people use "rogue" to mean "wandering".)
