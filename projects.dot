@@ -52,6 +52,8 @@ graph {
         find_posterior_modes                    [shape="diamond"]
         // What sort of tooling would actually help PANGO do their job better?
         help_PANGO                              [shape="diamond"]
+        // How can we bridge the gap between parsimony and full Felsenstein likelihoods?
+        big_tree_likelihoods                    [shape="diamond"]
     // Phylogenetics, with hard math
         GCtree_with_heritable                   [shape="diamond"]
         local_EM                                [shape="diamond"]
@@ -95,6 +97,7 @@ graph {
     Bayesian_histories -- SARS2_parsimony_plateau
     Bayesian_histories -- help_PANGO
     Bayesian_histories -- fast_TreeTime
+    Bayesian_histories -- big_tree_likelihoods
     fast_TreeTime -- polytomy_resolution
     Bayesian_GCtree -- GCreplay
     Bayesian_GCtree -- GCtree_with_heritable
