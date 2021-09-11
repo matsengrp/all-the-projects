@@ -3,67 +3,101 @@ graph {
     node[colorscheme="set312"]
 
     // active
+        // Do posterior estimation using Will's GCtree framework.
         Bayesian_GCtree                         [style="filled";color=11]
+        // A big collaboration with the Victora and Bloom labs to understand GC maturation with replicate samples.
         GCreplay                                [style="filled";color=11]
+        // Assya's project understanding the effects of HLA on repertoire.
         HLA_effects                             [style="filled";color=11]
+        // Develop statistics and software tools for PhIP-seq analyses.
         PhIP_seq                                [style="filled";color=11]
+        // GWAS to infer TCR-repertoire features.
         TCR_GWAS                                [style="filled";color=11]
+        // What sequence-level features determine trimming of TCRs in VDJ recombination?
         TCR_trimming_motifs                     [style="filled";color=11]
+        // Bayesian Inference of Trees via Optimization: a C++/python package
         bito                                    [style="filled";color=11]
+        // How fast is autodiff for phylogenetically-relevant gradients?
         autodiff_gradients                      [style="filled";color=11]
+        // Generalization of the Felsenstein pruning algorithm to the subsplit DAG.
         generalized_pruning                     [style="filled";color=11]
+        // Design and fit mechanistically-based probabilistic models of the somatic hypermutation process.
         mechanistic_SHM                         [style="filled";color=11]
+        // Perform clonal family inference with paired heavy and light chain sequences.
         paired_HL                               [style="filled";color=11]
+        // Do variational inference of continuous parameters in phylogenetics.
         phylogenetic_VI                         [style="filled";color=11]
+        // What can we learn from deep mutational scanning on antibodies?
         antibody_DMS                            [style="filled";color=11]
+        // Formalize definitions of and basic lemmas for the subsplit DAG.
         subsplit_DAG                            [style="filled";color=11]
+        // Develop a DMS analysis package using a modern machine-learning library.
         torchdms                                [style="filled";color=11]
+        // Compare TCR repertoires via optimal transport.
         transport                               [style="filled";color=11]
+        // How will we know if VI is giving a good approximation?
         VI_diagnostics                          [style="filled";color=11]
 
     // ** dormant **
+        // The Clonal Family Tree pipeline to do clonal family inference and then phylogenetics.
         CFT                                     [shape="house"]
+        // What happens when we start ML algorithms at random starting points? What does it tell us about the phylogenetic likelihood surface?
         hillclimber                             [shape="house"]
+        // A visualization tool for BCR lineages.
         olmsted                                 [shape="house"]
 
     // ** Future **
-    // Biologist
+    // Immunology
+        // Do a GWAS for BCR repertoire features. Can we learn about SHM too?
         BCR_GWAS                                [shape="diamond"]
-    // Biologist-computational
+        // What sequence features lead to indels in BCR sequences?
         BCR_indels                              [shape="diamond"]
+        // Improve dN/dS analysis for BCR lineages, looking site-wise and per-lineage.
         BCR_selection_analysis                  [shape="diamond"]
+        // Look for patterns in BCR sequence evolution. Do they fall into "trajectories"?
         BCR_trajectories                        [shape="diamond"]
+        // Adapt CONGA (https://paperpile.com/shared/w2jo9E) for BCR sequences.
         B_cell_CONGA                            [shape="diamond"]
+        // Develop phyogenetic methods that enable inference under context-sensitive models.
         context_sensitive_phylo                 [shape="diamond"]
-        interactive_DMS_viz                     [shape="diamond"]
+        // Develop the next version of dms-view, with abilities to compare between data sets and also show K_D inferences.
+        dms_view2                               [shape="diamond"]
+        // Perform a detailed investigation of how SHM changes as people age.
         SHM_across_ages                         [shape="diamond"]
+        // linearham is our Bayesian method for doing inference of BCR lineage evolution. If we apply it to well-known data sets from the literature, how much uncertainty is there in ancestral sequence inference?
         linearham_empirical_uncertainty         [shape="diamond"]
     // Phylogenetics
-        // How does the Bayesian posterior distribution change when a taxon is added to the tree?
-        // (Note that some people use "rogue" to mean "wandering".)
+        // How does the Bayesian posterior distribution of n taxa change when an n+1st taxon is added to the tree?
         Bayesian_subtree_optimality             [shape="diamond"]
+        // Use a graph to capture the ensemble of maximally-parsimonious trees for SARS-Cov-2 data. How much uncertainty is there? How does PANGO look?
         SARS2_parsimony_plateau                 [shape="diamond"]
         // Develop NJ and parsimony approaches to reconstructing the sDAG.
         // What is NJp? https://paperpile.com/shared/QJm8XP
         // See https://ieeexplore.ieee.org/abstract/document/8404978
         // https://paperpile.com/shared/TaDKjP
         fasdag                                  [shape="diamond"]
-        // Can we do something to quickly find posterior modes?
+        // Can we do something to quickly find posterior modes in the phylogenetic posterior? Can we do better than hillclimbing?
         find_posterior_modes                    [shape="diamond"]
         // What sort of tooling would actually help PANGO do their job better?
         help_PANGO                              [shape="diamond"]
         // How can we bridge the gap between parsimony and full Felsenstein likelihoods?
         big_tree_likelihoods                    [shape="diamond"]
     // Phylogenetics, with hard math
+        // GCtree operates under the assumption of a neutral branching process, the parameters of which do not change through the tree. Can we extend this to a process with a heritable component?
         GCtree_with_heritable                   [shape="diamond"]
+        // Develop an EM algorithm for variational inference that uses local computation. Go Hogwild.
         local_EM                                [shape="diamond"]
+        // Speed up ML inference of time trees.
         fast_TreeTime                           [shape="diamond"]
+        // Can we quickly resolve sequence-level polytomies using timing/geography?
+        polytomy_resolution                     [shape="diamond"]
     // Phylogenetics, with hard coding
+        // Use variational inference as a proposal distribution for MCMC.
         adaptive_MCMC                           [shape="diamond"]
         // How big of a subsplit DAG is actually required to get reasonable estimates (with uncertaintly quantification) of key parameters?
         how_big_of_sDAG                         [shape="diamond"]
+        // Online (i.e. incremental) phylogenetic variational inference.
         online_phylo_VI                         [shape="diamond"]
-        polytomy_resolution                     [shape="diamond"]
 
     // ** topics **
         BCR_analysis                            [shape="rectangle"]
@@ -105,7 +139,7 @@ graph {
     GCreplay -- antibody_DMS
     antibody_DMS -- torchdms
     antibody_DMS -- PhIP_seq
-    antibody_DMS -- interactive_DMS_viz
+    antibody_DMS -- dms_view2
     BCR_analysis -- BCR_selection_analysis
     BCR_analysis -- BCR_trajectories
     BCR_analysis -- BCR_indels
