@@ -51,6 +51,7 @@ graph {
         GCtree_with_heritable                   [shape="diamond";tooltip="GCtree operates under the assumption of a neutral branching process, the parameters of which do not change through the tree. Can we extend this to a process with a heritable component?"]
         local_EM                                [shape="diamond";tooltip="Develop an EM algorithm for variational inference that uses local computation. Go Hogwild."]
         fast_TreeTime                           [shape="diamond";tooltip="Speed up ML inference of time trees."]
+        find_MAP_tree_in_subsplit_DAG           [shape="diamond";tooltip="Can we quickly find the MAP tree in the subsplit DAG?"]
         polytomy_resolution                     [shape="diamond";tooltip="Can we quickly resolve sequence-level polytomies using timing/geography?"]
     // Phylogenetics, with hard coding
         adaptive_MCMC                           [shape="diamond";tooltip="Use variational inference as a proposal distribution for MCMC."]
@@ -82,6 +83,7 @@ graph {
     subsplit_DAG -- how_big_of_sDAG
     subsplit_DAG -- Bayesian_subtree_optimality
     subsplit_DAG -- fasdag
+    subsplit_DAG -- find_MAP_tree_in_subsplit_DAG
     hillclimber -- find_posterior_modes
     how_big_of_sDAG -- find_posterior_modes
     Bayesian_histories -- context_sensitive_phylo
