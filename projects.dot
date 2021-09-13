@@ -107,6 +107,7 @@ graph {
     BCR_analysis -- paired_HL
     BCR_analysis -- CFT
     BCR_analysis -- linearham_empirical_uncertainty
+    BCR_analysis -- Bayesian_GCtree
     CFT -- olmsted
     BCR_analysis -- mechanistic_SHM
     mechanistic_SHM -- SHM_across_ages
