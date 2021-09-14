@@ -16,6 +16,7 @@ graph {
         paired_HL                               [style="filled";color=11;tooltip="Perform clonal family inference with paired heavy and light chain sequences."]
         phylogenetic_VI                         [style="filled";color=11;tooltip="Do variational inference of continuous parameters in phylogenetics."]
         antibody_DMS                            [style="filled";color=11;tooltip="What can we learn from deep mutational scanning on antibodies?"]
+        SARS2_parsimony_plateau                 [style="filled";color=11;tooltip="Use a graph to capture the ensemble of maximally-parsimonious trees for SARS-Cov-2 data. How much uncertainty is there? How does PANGO look?"]
         subsplit_DAG                            [style="filled";color=11;tooltip="Formalize definitions of and basic lemmas for the subsplit DAG."]
         torchdms                                [style="filled";color=11;tooltip="Develop a DMS analysis package using a modern machine-learning library."]
         transport                               [style="filled";color=11;tooltip="Compare TCR repertoires via optimal transport."]
@@ -30,6 +31,7 @@ graph {
     // Immunology
         BCR_GWAS                                [shape="diamond";tooltip="Do a GWAS for BCR repertoire features. Can we learn about SHM too?"]
         BCR_indels                              [shape="diamond";tooltip="What sequence features lead to indels in BCR sequences?"]
+        clonal_families_with_indels             [shape="diamond";tooltip="Can we do better clonal family clustering in the presence of indels?"]
         BCR_selection_analysis                  [shape="diamond";tooltip="Improve dN/dS analysis for BCR lineages, looking site-wise and per-lineage."]
         BCR_trajectories                        [shape="diamond";tooltip="Look for patterns in BCR sequence evolution. Do they fall into 'trajectories'?"]
         B_cell_CONGA                            [shape="diamond";tooltip="Adapt CONGA (https://paperpile.com/shared/w2jo9E) for BCR sequences."]
@@ -39,7 +41,6 @@ graph {
         linearham_empirical_uncertainty         [shape="diamond";tooltip="linearham is our Bayesian method for doing inference of BCR lineage evolution. If we apply it to well-known data sets from the literature, how much uncertainty is there in ancestral sequence inference?"]
     // Phylogenetics
         Bayesian_subtree_optimality             [shape="diamond";tooltip="How does the Bayesian posterior distribution of n taxa change when an n+1st taxon is added to the tree?"]
-        SARS2_parsimony_plateau                 [shape="diamond";tooltip="Use a graph to capture the ensemble of maximally-parsimonious trees for SARS-Cov-2 data. How much uncertainty is there? How does PANGO look?"]
         // What is NJp? https://paperpile.com/shared/QJm8XP
         // See https://ieeexplore.ieee.org/abstract/document/8404978
         // https://paperpile.com/shared/TaDKjP
@@ -103,6 +104,7 @@ graph {
     BCR_analysis -- BCR_selection_analysis
     BCR_analysis -- BCR_trajectories
     BCR_analysis -- BCR_indels
+    BCR_analysis -- clonal_families_with_indels
     BCR_analysis -- Bayesian_histories
     BCR_analysis -- paired_HL
     BCR_analysis -- CFT
