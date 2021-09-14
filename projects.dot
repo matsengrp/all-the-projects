@@ -24,7 +24,7 @@ graph {
 
     // ** dormant **
         CFT                                     [shape="house";tooltip="The Clonal Family Tree pipeline to do clonal family inference and then phylogenetics."]
-        hillclimber                             [shape="house";tooltip="What happens when we start ML algorithms at random starting points? What does it tell us about the phylogenetic likelihood surface?"]
+        hillclimber                             [style="filled";color=8;shape="house";tooltip="What happens when we start ML algorithms at random starting points? What does it tell us about the phylogenetic likelihood surface?"]
         olmsted                                 [shape="house";tooltip="A visualization tool for BCR lineages."]
 
     // ** Future **
@@ -40,19 +40,19 @@ graph {
         SHM_across_ages                         [shape="diamond";tooltip="Perform a detailed investigation of how SHM changes as people age."]
         linearham_empirical_uncertainty         [shape="diamond";tooltip="linearham is our Bayesian method for doing inference of BCR lineage evolution. If we apply it to well-known data sets from the literature, how much uncertainty is there in ancestral sequence inference?"]
     // Phylogenetics
-        Bayesian_subtree_optimality             [shape="diamond";tooltip="How does the Bayesian posterior distribution of n taxa change when an n+1st taxon is added to the tree?"]
+        Bayesian_subtree_optimality             [style="filled";color=8;shape="diamond";tooltip="How does the Bayesian posterior distribution of n taxa change when an n+1st taxon is added to the tree?"]
         // What is NJp? https://paperpile.com/shared/QJm8XP
         // See https://ieeexplore.ieee.org/abstract/document/8404978
         // https://paperpile.com/shared/TaDKjP
-        fasdag                                  [shape="diamond";tooltip="Develop NJ and parsimony approaches to reconstructing the sDAG."]
-        find_posterior_modes                    [shape="diamond";tooltip="Can we do something to quickly find posterior modes in the phylogenetic posterior? Can we do better than hillclimbing?"]
+        fasdag                                  [style="filled";color=8;shape="diamond";tooltip="Develop NJ and parsimony approaches to reconstructing the sDAG."]
+        find_posterior_modes                    [style="filled";color=8;shape="diamond";tooltip="Can we do something to quickly find posterior modes in the phylogenetic posterior? Can we do better than hillclimbing?"]
         help_PANGO                              [shape="diamond";tooltip="What sort of tooling would actually help PANGO do their job better?"]
         big_tree_likelihoods                    [shape="diamond";tooltip="How can we bridge the gap between parsimony and full Felsenstein likelihoods?"]
     // Phylogenetics, with hard math
         GCtree_with_heritable                   [shape="diamond";tooltip="GCtree operates under the assumption of a neutral branching process, the parameters of which do not change through the tree. Can we extend this to a process with a heritable component?"]
-        local_EM                                [shape="diamond";tooltip="Develop an EM algorithm for variational inference that uses local computation. Go Hogwild."]
+        local_EM                                [style="filled";color=8;shape="diamond";tooltip="Develop an EM algorithm for variational inference that uses local computation. Go Hogwild."]
         fast_TreeTime                           [shape="diamond";tooltip="Speed up ML inference of time trees."]
-        find_MAP_tree_in_subsplit_DAG           [shape="diamond";tooltip="Can we quickly find the MAP tree in the subsplit DAG?"]
+        find_MAP_tree_in_subsplit_DAG           [style="filled";color=8;shape="diamond";tooltip="Can we quickly find the MAP tree in the subsplit DAG?"]
         polytomy_resolution                     [shape="diamond";tooltip="Can we quickly resolve sequence-level polytomies using timing/geography?"]
     // Phylogenetics, with hard coding
         adaptive_MCMC                           [shape="diamond";tooltip="Use variational inference as a proposal distribution for MCMC."]

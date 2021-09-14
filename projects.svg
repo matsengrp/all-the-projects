@@ -300,7 +300,7 @@
 <g id="node20" class="node">
 <title>hillclimber</title>
 <g id="a_node20"><a xlink:title="What happens when we start ML algorithms at random starting points? What does it tell us about the phylogenetic likelihood surface?">
-<polygon fill="none" stroke="#000000" points="766.1116,-1339.9459 704.3919,-1352.3836 642.6721,-1339.9459 642.7297,-1319.8213 766.054,-1319.8213 766.1116,-1339.9459"/>
+<polygon fill="#fccde5" stroke="#fccde5" points="766.1116,-1339.9459 704.3919,-1352.3836 642.6721,-1339.9459 642.7297,-1319.8213 766.054,-1319.8213 766.1116,-1339.9459"/>
 <text text-anchor="middle" x="704.3919" y="-1330.6836" font-family="Times,serif" font-size="14.00" fill="#000000">hillclimber</text>
 </a>
 </g>
@@ -314,7 +314,7 @@
 <g id="node32" class="node">
 <title>Bayesian_subtree_optimality</title>
 <g id="a_node32"><a xlink:title="How does the Bayesian posterior distribution of n taxa change when an n+1st taxon is added to the tree?">
-<polygon fill="none" stroke="#000000" points="564.8786,-1216.4321 404.1734,-1198.4321 564.8786,-1180.4321 725.5837,-1198.4321 564.8786,-1216.4321"/>
+<polygon fill="#fccde5" stroke="#fccde5" points="564.8786,-1216.4321 404.1734,-1198.4321 564.8786,-1180.4321 725.5837,-1198.4321 564.8786,-1216.4321"/>
 <text text-anchor="middle" x="564.8786" y="-1194.7321" font-family="Times,serif" font-size="14.00" fill="#000000">Bayesian_subtree_optimality</text>
 </a>
 </g>
@@ -328,7 +328,7 @@
 <g id="node33" class="node">
 <title>fasdag</title>
 <g id="a_node33"><a xlink:title="Develop NJ and parsimony approaches to reconstructing the sDAG.">
-<polygon fill="none" stroke="#000000" points="495.5002,-913.601 447.907,-895.601 495.5002,-877.601 543.0935,-895.601 495.5002,-913.601"/>
+<polygon fill="#fccde5" stroke="#fccde5" points="495.5002,-913.601 447.907,-895.601 495.5002,-877.601 543.0935,-895.601 495.5002,-913.601"/>
 <text text-anchor="middle" x="495.5002" y="-891.901" font-family="Times,serif" font-size="14.00" fill="#000000">fasdag</text>
 </a>
 </g>
@@ -342,7 +342,7 @@
 <g id="node38" class="node">
 <title>local_EM</title>
 <g id="a_node38"><a xlink:title="Develop an EM algorithm for variational inference that uses local computation. Go Hogwild.">
-<polygon fill="none" stroke="#000000" points="732.4388,-1264.3279 667.4176,-1246.3279 732.4388,-1228.3279 797.46,-1246.3279 732.4388,-1264.3279"/>
+<polygon fill="#fccde5" stroke="#fccde5" points="732.4388,-1264.3279 667.4176,-1246.3279 732.4388,-1228.3279 797.46,-1246.3279 732.4388,-1264.3279"/>
 <text text-anchor="middle" x="732.4388" y="-1242.6279" font-family="Times,serif" font-size="14.00" fill="#000000">local_EM</text>
 </a>
 </g>
@@ -356,7 +356,7 @@
 <g id="node40" class="node">
 <title>find_MAP_tree_in_subsplit_DAG</title>
 <g id="a_node40"><a xlink:title="Can we quickly find the MAP tree in the subsplit DAG?">
-<polygon fill="none" stroke="#000000" points="561.3912,-1065.8664 373.875,-1047.8664 561.3912,-1029.8664 748.9073,-1047.8664 561.3912,-1065.8664"/>
+<polygon fill="#fccde5" stroke="#fccde5" points="561.3912,-1065.8664 373.875,-1047.8664 561.3912,-1029.8664 748.9073,-1047.8664 561.3912,-1065.8664"/>
 <text text-anchor="middle" x="561.3912" y="-1044.1664" font-family="Times,serif" font-size="14.00" fill="#000000">find_MAP_tree_in_subsplit_DAG</text>
 </a>
 </g>
@@ -446,7 +446,7 @@
 <g id="node34" class="node">
 <title>find_posterior_modes</title>
 <g id="a_node34"><a xlink:title="Can we do something to quickly find posterior modes in the phylogenetic posterior? Can we do better than hillclimbing?">
-<polygon fill="none" stroke="#000000" points="582.3116,-1510.391 457.3008,-1492.391 582.3116,-1474.391 707.3223,-1492.391 582.3116,-1510.391"/>
+<polygon fill="#fccde5" stroke="#fccde5" points="582.3116,-1510.391 457.3008,-1492.391 582.3116,-1474.391 707.3223,-1492.391 582.3116,-1510.391"/>
 <text text-anchor="middle" x="582.3116" y="-1488.691" font-family="Times,serif" font-size="14.00" fill="#000000">find_posterior_modes</text>
 </a>
 </g>
