@@ -12,6 +12,7 @@ graph {
         bito                                    [style="filled";color=11;tooltip="Bayesian Inference of Trees via Optimization: a C++/python package"]
         autodiff_gradients                      [style="filled";color=11;tooltip="How fast is autodiff for phylogenetically-relevant gradients?"]
         generalized_pruning                     [style="filled";color=11;tooltip="Generalization of the Felsenstein pruning algorithm to the subsplit DAG."]
+        linearham_empirical_uncertainty         [style="filled";color=11;tooltip="linearham is our Bayesian method for doing inference of BCR lineage evolution. If we apply it to well-known data sets from the literature, how much uncertainty is there in ancestral sequence inference?"]
         mechanistic_SHM                         [style="filled";color=11;tooltip="Design and fit mechanistically-based probabilistic models of the somatic hypermutation process."]
         paired_HL                               [style="filled";color=11;tooltip="Perform clonal family inference with paired heavy and light chain sequences."]
         phylogenetic_VI                         [style="filled";color=11;tooltip="Do variational inference of continuous parameters in phylogenetics."]
@@ -38,7 +39,6 @@ graph {
         context_sensitive_phylo                 [shape="diamond";tooltip="Develop phyogenetic methods that enable inference under context-sensitive models."]
         dms_view2                               [shape="diamond";tooltip="Develop the next version of dms-view, with abilities to compare between data sets and also show K_D inferences."]
         SHM_across_ages                         [shape="diamond";tooltip="Perform a detailed investigation of how SHM changes as people age."]
-        linearham_empirical_uncertainty         [shape="diamond";tooltip="linearham is our Bayesian method for doing inference of BCR lineage evolution. If we apply it to well-known data sets from the literature, how much uncertainty is there in ancestral sequence inference?"]
     // Phylogenetics
         Bayesian_subtree_optimality             [style="filled";color=8;shape="diamond";tooltip="How does the Bayesian posterior distribution of n taxa change when an n+1st taxon is added to the tree?"]
         // What is NJp? https://paperpile.com/shared/QJm8XP
