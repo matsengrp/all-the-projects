@@ -39,6 +39,7 @@ graph {
         context_sensitive_phylo                 [shape="diamond";tooltip="Develop phyogenetic methods that enable inference under context-sensitive models."]
         dms_view2                               [shape="diamond";tooltip="Develop the next version of dms-view, with abilities to compare between data sets and also show K_D inferences."]
         SHM_across_ages                         [shape="diamond";tooltip="Perform a detailed investigation of how SHM changes as people age."]
+        Bayesian_VDJ_recombination              [shape="diamond";tooltip="Can we do Bayesian estimation of VDJ recombination models?"]
     // Phylogenetics
         Bayesian_subtree_optimality             [style="filled";color=8;shape="diamond";tooltip="How does the Bayesian posterior distribution of n taxa change when an n+1st taxon is added to the tree?"]
         // What is NJp? https://paperpile.com/shared/QJm8XP
@@ -110,6 +111,7 @@ graph {
     BCR_analysis -- CFT
     BCR_analysis -- linearham_empirical_uncertainty
     BCR_analysis -- Bayesian_GCtree
+    BCR_analysis -- Bayesian_VDJ_recombination
     CFT -- olmsted
     BCR_analysis -- mechanistic_SHM
     mechanistic_SHM -- SHM_across_ages
@@ -119,6 +121,7 @@ graph {
     TCR_analysis -- HLA_effects
     TCR_analysis -- transport
     TCR_analysis -- TCR_trimming_motifs
+    TCR_analysis -- Bayesian_VDJ_recombination
     mechanistic_SHM -- context_sensitive_phylo
     paired_HL -- B_cell_CONGA
 }
