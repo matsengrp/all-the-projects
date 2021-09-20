@@ -1,5 +1,5 @@
 default:
-	neato -Tsvg projects.dot > projects.svg
+	fdp -Tsvg projects.dot > projects.svg
 
 view:
-	xdot -f neato projects.dot
+	xdot -f fdp projects.dot
