@@ -1,6 +1,7 @@
 graph {
     overlap=false
     node[colorscheme="set312"]
+    // https://graphviz.org/doc/info/colors.html
 
     // ** legend **
     subgraph cluster_0 {
@@ -60,6 +61,7 @@ graph {
         // See https://ieeexplore.ieee.org/abstract/document/8404978
         // https://paperpile.com/shared/TaDKjP
         fasdag                                  [style="filled";color=7;shape="diamond";tooltip="Develop NJ and parsimony approaches to reconstructing the sDAG."]
+        variational_on_time_tree_samples        [style="filled";color=7;shape="diamond";tooltip="Develop variational models and fit them to time-tree MCMC samples. How well do they fit?"]
         find_posterior_modes                    [style="filled";color=7;shape="diamond";tooltip="Can we do something to quickly find posterior modes in the phylogenetic posterior? Can we do better than hillclimbing?"]
         help_PANGO                              [shape="diamond";tooltip="What sort of tooling would actually help PANGO do their job better?"]
         big_tree_likelihoods                    [shape="diamond";tooltip="How can we bridge the gap between parsimony and full Felsenstein likelihoods?"]
@@ -75,6 +77,8 @@ graph {
         online_phylo_VI                         [style="filled";color=9;shape="diamond";tooltip="Online (i.e. incremental) phylogenetic variational inference."]
     // Population genetics
         SARS2_lineage_prediction                [style="filled";color=7;shape="diamond";tooltip="Predict future dominant clades of SARS-Cov-2."]
+    // Protein science
+        benchmark_torchdms                      [style="filled";color=7;shape="diamond";tooltip="Perform futher benchmarking of torchdms and other methods."]
 
     // ** topics **
         BCR_analysis                            [shape="rectangle"]
@@ -105,6 +109,7 @@ graph {
     subsplit_DAG -- Bayesian_subtree_optimality
     subsplit_DAG -- fasdag
     subsplit_DAG -- find_MAP_tree_in_subsplit_DAG
+    subsplit_DAG -- variational_on_time_tree_samples
     hillclimber -- find_posterior_modes
     how_big_of_sDAG -- find_posterior_modes
     Bayesian_histories -- context_sensitive_phylo
@@ -118,6 +123,7 @@ graph {
     Bayesian_GCtree -- GCtree_with_heritable
     GCreplay -- torchdms
     GCreplay -- antibody_DMS
+    torchdms -- benchmark_torchdms
     antibody_DMS -- torchdms
     antibody_DMS -- PhIP_seq
     antibody_DMS -- dms_view2
