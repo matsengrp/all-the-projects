@@ -3,7 +3,7 @@ default: projects.svg
 view:
 	xdot -f fdp projects.dot
 
-projects.svg:
+projects.svg: projects.dot
 	fdp -Tsvg projects.dot > projects.svg
 
 projects.pdf: projects.svg

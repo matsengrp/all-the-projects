@@ -65,6 +65,7 @@ graph {
         find_posterior_modes                    [style="filled";color=7;shape="diamond";tooltip="Can we do something to quickly find posterior modes in the phylogenetic posterior? Can we do better than hillclimbing?"]
         help_PANGO                              [shape="diamond";tooltip="What sort of tooling would actually help PANGO do their job better?"]
         big_tree_likelihoods                    [shape="diamond";tooltip="How can we bridge the gap between parsimony and full Felsenstein likelihoods?"]
+        fix_generalized_pruning                 [shape="diamond";tooltip="How could we fix marginalization issues with generalized pruning?"]
     // Phylogenetics, with hard math
         GCtree_with_heritable                   [style="filled";color=7;shape="diamond";tooltip="GCtree operates under the assumption of a neutral branching process, the parameters of which do not change through the tree. Can we extend this to a process with a heritable component?"]
         local_EM                                [style="filled";color=7;shape="diamond";tooltip="Develop an EM algorithm for variational inference that uses local computation. Go Hogwild."]
@@ -110,6 +111,7 @@ graph {
     subsplit_DAG -- fasdag
     subsplit_DAG -- find_MAP_tree_in_subsplit_DAG
     subsplit_DAG -- variational_on_time_tree_samples
+    generalized_pruning -- fix_generalized_pruning
     hillclimber -- find_posterior_modes
     how_big_of_sDAG -- find_posterior_modes
     Bayesian_histories -- context_sensitive_phylo
