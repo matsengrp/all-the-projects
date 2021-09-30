@@ -69,6 +69,8 @@ graph {
     // Phylogenetics, with hard math
         GCtree_with_heritable                   [style="filled";color=7;shape="diamond";tooltip="GCtree operates under the assumption of a neutral branching process, the parameters of which do not change through the tree. Can we extend this to a process with a heritable component?"]
         local_EM                                [style="filled";color=7;shape="diamond";tooltip="Develop an EM algorithm for variational inference that uses local computation. Go Hogwild."]
+        variational_branch_lengths              [style="filled";color=7;shape="diamond";tooltip="Get Cheng's normalizing flow code working."]
+        bito_vimco                              [style="filled";color=7;shape="diamond";tooltip="Get VIMCO working in bito."]
         fast_TreeTime                           [style="filled";color=1;shape="diamond";tooltip="Speed up ML inference of time trees."]
         find_MAP_tree_in_subsplit_DAG           [style="filled";color=7;shape="diamond";tooltip="Can we quickly find the MAP tree in the subsplit DAG?"]
         polytomy_resolution                     [shape="diamond";tooltip="Can we quickly resolve sequence-level polytomies using timing/geography?"]
@@ -99,6 +101,8 @@ graph {
     bito -- phylogenetic_VI
     VI_diagnostics -- phylogenetic_VI
     bito -- autodiff_gradients
+    bito -- bito_vimco
+    bito -- variational_branch_lengths
     bito -- subsplit_DAG
     phylogenetic_VI -- online_phylo_VI
     subsplit_DAG -- online_phylo_VI
