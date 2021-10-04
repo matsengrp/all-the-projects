@@ -11,6 +11,10 @@ graph {
         needing_logistics                       [style="filled";color=6]
         needing_consideration                   [style="filled";color=1]
         eventually                              [style="filled";color=9]
+        topic                                   [shape="rectangle"]
+        significant_work_already_done           [shape="house"]
+        proposed_project                        [shape="diamond"]
+        active_project
         // for_programmer -- active
         // active -- ready_to_go
         // ready_to_go -- needing_thought
