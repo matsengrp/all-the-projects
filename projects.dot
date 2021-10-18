@@ -35,6 +35,7 @@ graph {
         mechanistic_SHM                         [style="filled";color=11;tooltip="Design and fit mechanistically-based probabilistic models of the somatic hypermutation process."]
         paired_HL                               [style="filled";color=11;tooltip="Perform clonal family inference with paired heavy and light chain sequences."]
         phylogenetic_VI                         [style="filled";color=11;tooltip="Do variational inference of continuous parameters in phylogenetics."]
+        benchmark_phylogenetic_VI               [style="filled";color=10;tooltip="How well are existing phylo VI tools doing?"]
         antibody_DMS                            [style="filled";color=11;tooltip="What can we learn from deep mutational scanning on antibodies?"]
         SARS2_parsimony_plateau                 [style="filled";color=11;tooltip="Use a graph to capture the ensemble of maximally-parsimonious trees for SARS-Cov-2 data. How much uncertainty is there? How does PANGO look?"]
         subsplit_DAG                            [style="filled";color=11;tooltip="Formalize definitions of and basic lemmas for the subsplit DAG."]
@@ -109,6 +110,7 @@ graph {
     bito -- variational_branch_lengths
     bito -- subsplit_DAG
     phylogenetic_VI -- online_phylo_VI
+    phylogenetic_VI -- benchmark_phylogenetic_VI
     subsplit_DAG -- online_phylo_VI
     subsplit_DAG -- hillclimber
     subsplit_DAG -- generalized_pruning
