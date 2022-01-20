@@ -54,8 +54,8 @@ graph {
         BCR_indels                              [shape="diamond";style=filled;color=1;tooltip="What sequence features lead to indels in BCR sequences?"]
         clonal_families_with_indels             [shape="diamond";style=filled;color=1;tooltip="Can we do better clonal family clustering in the presence of indels?"]
         in_out_frame_correlation                [shape="diamond";style=filled;color=7;tooltip="Is there a correlation between the characteristics of the in-frame and out-of-frame TCR sequences?"]
-        BCR_selection_analysis                  [shape="diamond";style=filled;color=1;tooltip="Improve dN/dS analysis for BCR lineages, looking site-wise and per-lineage."]
-        BCR_trajectories                        [shape="diamond";style=filled;color=1;tooltip="Look for patterns in BCR sequence evolution. Do they fall into 'trajectories'?"]
+        BCR_selection_analysis                  [shape="diamond";style=filled;color=1;tooltip="Improve dN/dS analysis for BCR lineages, looking site-wise and per-lineage. Compare with germline variation https://app.slack.com/client/T02A75JTQ/C02T32BEX44?cdn_fallback=1 "]
+        BCR_trajectories                        [shape="diamond";style=filled;color=1;tooltip="Look for patterns in BCR sequence evolution. Do they fall into 'trajectories'? see https://paperpile.com/shared/34RImX "]
         B_cell_CONGA                            [shape="diamond";style=filled;color=7;tooltip="Adapt CONGA (https://paperpile.com/shared/w2jo9E) for BCR sequences."]
         context_sensitive_phylo                 [shape="diamond";style=filled;color=7;tooltip="Develop phyogenetic methods that enable inference under context-sensitive models."]
         dms_view2                               [shape="diamond";style=filled;color=10;tooltip="Develop the next version of dms-view, with abilities to compare between data sets and also show K_D inferences."]
@@ -87,6 +87,7 @@ graph {
         online_phylo_VI                         [style="filled";color=9;shape="diamond";tooltip="Online (i.e. incremental) phylogenetic variational inference."]
     // Population genetics
         SARS2_lineage_prediction                [style="filled";color=7;shape="diamond";tooltip="Predict future dominant clades of SARS-Cov-2."]
+        better_fitness_predictors               [style="filled";color=7;shape="diamond";tooltip="Can we do better than LBI for local fitness prediction?"]
     // Protein science
         benchmark_torchdms                      [style="filled";color=7;shape="diamond";tooltip="Perform futher benchmarking of torchdms and other methods."]
 
