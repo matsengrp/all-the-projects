@@ -40,6 +40,7 @@ graph {
         SARS2_parsimony_plateau                 [style="filled";color=11;tooltip="Use a graph to capture the ensemble of maximally-parsimonious trees for SARS-Cov-2 data. How much uncertainty is there? How does PANGO look?"]
         subsplit_DAG                            [style="filled";color=11;tooltip="Formalize definitions of and basic lemmas for the subsplit DAG."]
         torchdms                                [style="filled";color=11;tooltip="Develop a DMS analysis package using a modern machine-learning library."]
+        polyclonal                              [style="filled";color=11;tooltip="Collaborate with the Bloom lab to develop mechanistically-driven antibody escape inference."]
         transport                               [style="filled";color=11;tooltip="Compare TCR repertoires via optimal transport."]
         VI_diagnostics                          [style="filled";color=11;tooltip="How will we know if VI is giving a good approximation?"]
 
@@ -58,7 +59,6 @@ graph {
         BCR_trajectories                        [shape="diamond";style=filled;color=1;tooltip="Look for patterns in BCR sequence evolution. Do they fall into 'trajectories'? see https://paperpile.com/shared/34RImX "]
         B_cell_CONGA                            [shape="diamond";style=filled;color=7;tooltip="Adapt CONGA (https://paperpile.com/shared/w2jo9E) for BCR sequences."]
         context_sensitive_phylo                 [shape="diamond";style=filled;color=7;tooltip="Develop phyogenetic methods that enable inference under context-sensitive models."]
-        dms_view2                               [shape="diamond";style=filled;color=10;tooltip="Develop the next version of dms-view, with abilities to compare between data sets and also show K_D inferences."]
         SHM_across_ages                         [style="filled";color=6;shape="diamond";tooltip="Perform a detailed investigation of how SHM changes as people age."]
         Bayesian_VDJ_recombination              [shape="diamond";tooltip="Can we do Bayesian estimation of VDJ recombination models?"]
         biology_of_paired_HL                    [shape="diamond";tooltip="What does paired clustering tell us about how heavy and light chain clustering works?"]
@@ -70,7 +70,6 @@ graph {
         fasdag                                  [style="filled";color=7;shape="diamond";tooltip="Develop NJ and parsimony approaches to reconstructing the sDAG."]
         variational_on_time_tree_samples        [style="filled";color=7;shape="diamond";tooltip="Develop variational models and fit them to time-tree MCMC samples. How well do they fit?"]
         find_posterior_modes                    [style="filled";color=7;shape="diamond";tooltip="Can we do something to quickly find posterior modes in the phylogenetic posterior? Can we do better than hillclimbing?"]
-        help_PANGO                              [shape="diamond";tooltip="What sort of tooling would actually help PANGO do their job better?"]
         big_tree_likelihoods                    [shape="diamond";tooltip="How can we bridge the gap between parsimony and full Felsenstein likelihoods?"]
         fix_generalized_pruning                 [shape="diamond";tooltip="How could we fix marginalization issues with generalized pruning?"]
     // Phylogenetics, with hard math
@@ -96,6 +95,7 @@ graph {
         Bayesian_histories                      [shape="rectangle"]
         TCR_analysis                            [shape="rectangle"]
         trees_and_fitness                       [shape="rectangle"]
+        DMS                                     [shape="rectangle"]
 
     // ** bigger-picture **
         train_awesome_researchers               [shape="star"]
@@ -130,18 +130,18 @@ graph {
     Bayesian_histories -- context_sensitive_phylo
     Bayesian_histories -- Bayesian_GCtree
     Bayesian_histories -- SARS2_parsimony_plateau
-    Bayesian_histories -- help_PANGO
     Bayesian_histories -- fast_TreeTime
     Bayesian_histories -- big_tree_likelihoods
     fast_TreeTime -- polytomy_resolution
     Bayesian_GCtree -- GCreplay
     Bayesian_GCtree -- GCtree_with_heritable
     GCreplay -- torchdms
-    GCreplay -- antibody_DMS
+    GCreplay -- DMS
     torchdms -- benchmark_torchdms
-    antibody_DMS -- torchdms
-    antibody_DMS -- PhIP_seq
-    antibody_DMS -- dms_view2
+    DMS -- torchdms
+    DMS -- antibody_DMS
+    DMS -- polyclonal
+    DMS -- PhIP_seq
     BCR_analysis -- BCR_selection_analysis
     BCR_analysis -- BCR_trajectories
     BCR_analysis -- BCR_indels
