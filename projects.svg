@@ -654,7 +654,7 @@
 <!-- in_out_frame_correlation -->
 <g id="node38" class="node">
 <title>in_out_frame_correlation</title>
-<g id="a_node38"><a xlink:title="Is there a correlation between the characteristics of the in&#45;frame and out&#45;of&#45;frame TCR sequences?">
+<g id="a_node38"><a xlink:title="Is there a correlation between the characteristics of the in&#45;frame and out&#45;of&#45;frame TCR sequences? Like, is there a latent state in a cell that would impact both chains?">
 <polygon fill="#b3de69" stroke="#b3de69" points="892.1137,-1305.5317 749.675,-1287.5317 892.1137,-1269.5317 1034.5525,-1287.5317 892.1137,-1305.5317"/>
 <text text-anchor="middle" x="892.1137" y="-1283.8317" font-family="Times,serif" font-size="14.00" fill="#000000">in_out_frame_correlation</text>
 </a>
