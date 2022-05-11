@@ -56,7 +56,7 @@ graph {
         clonal_families_with_indels             [shape="diamond";style=filled;color=1;tooltip="Can we do better clonal family clustering in the presence of indels?"]
         in_out_frame_correlation                [shape="diamond";style=filled;color=7;tooltip="Is there a correlation between the characteristics of the in-frame and out-of-frame TCR sequences? Like, is there a latent state in a cell that would impact both chains?"]
         BCR_selection_analysis                  [shape="diamond";style=filled;color=1;tooltip="Improve dN/dS analysis for BCR lineages, looking site-wise and per-lineage. Compare with germline variation https://app.slack.com/client/T02A75JTQ/C02T32BEX44?cdn_fallback=1 "]
-        BCR_trajectories                        [shape="diamond";style=filled;color=1;tooltip="Look for patterns in BCR sequence evolution. Do they fall into 'trajectories'? see https://paperpile.com/shared/34RImX "]
+        BCR_trajectories                        [shape="diamond";style=filled;color=1;tooltip="Look for patterns in BCR sequence evolution. Do they fall into 'trajectories'? see https://paperpile.com/shared/34RImX Can we find signatures of epistasis in VDJ repertoires?"]
         B_cell_CONGA                            [shape="diamond";style=filled;color=7;tooltip="Adapt CONGA (https://paperpile.com/shared/w2jo9E) for BCR sequences."]
         context_sensitive_phylo                 [shape="diamond";style=filled;color=7;tooltip="Develop phyogenetic methods that enable inference under context-sensitive models."]
         SHM_across_ages                         [style="filled";color=6;shape="diamond";tooltip="Perform a detailed investigation of how SHM changes as people age."]

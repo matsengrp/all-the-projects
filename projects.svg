@@ -672,7 +672,7 @@
 <!-- BCR_trajectories -->
 <g id="node40" class="node">
 <title>BCR_trajectories</title>
-<g id="a_node40"><a xlink:title="Look for patterns in BCR sequence evolution. Do they fall into &#39;trajectories&#39;? see https://paperpile.com/shared/34RImX ">
+<g id="a_node40"><a xlink:title="Look for patterns in BCR sequence evolution. Do they fall into &#39;trajectories&#39;? see https://paperpile.com/shared/34RImX Can we find signatures of epistasis in VDJ repertoires?">
 <polygon fill="#8dd3c7" stroke="#8dd3c7" points="684.7445,-855.6816 583.5298,-837.6816 684.7445,-819.6816 785.9592,-837.6816 684.7445,-855.6816"/>
 <text text-anchor="middle" x="684.7445" y="-833.9816" font-family="Times,serif" font-size="14.00" fill="#000000">BCR_trajectories</text>
 </a>
